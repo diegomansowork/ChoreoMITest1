@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/dynamicEndpoint1" name="DynamicEndpointAPI" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" uri-template="/route">
+        <inSequence>
+            <sequence key="RequestLogger"/>
+            <property expression="get-property('transport', 'targetEP')" name="targetEP" scope="default" type="STRING"/>
+            <filter regex="endpoint1" source="$ctx:targetEP">
+                <then>
+                    <header name="epTest" scope="transport" value="Llamando al 1"/>
+                    <call>
+                        <endpoint key="Endpoint1"/>
+                    </call>
+                </then>
+                <else>
+                    <call>
+                        <endpoint key="Endpoint2"/>
+                    </call>
+                </else>
+            </filter>
+            <log level="custom">
+                <property name="STATUS" value="Request processed"/>
+            </log>
+            <respond description="vuelta"/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence>
+            <log level="custom">
+                <property expression="get-property('ERROR_MESSAGE')" name="ERROR"/>
+            </log>
+            <respond/>
+        </faultSequence>
+    </resource>
+</api>

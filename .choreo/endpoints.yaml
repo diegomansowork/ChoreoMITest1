@@ -1,0 +1,8 @@
+version: 1.0
+endpoints:
+  - name: DynamicEndpointAPI1
+    port: 8290
+    type: REST
+    networkVisibility: Public
+    context: /dynamicEndpoint1
+    schemaFilePath: DynamicEndpointOpenAPI.yaml

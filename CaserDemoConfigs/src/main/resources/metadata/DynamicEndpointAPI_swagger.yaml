@@ -1,0 +1,13 @@
+openapi: 3.0.1
+info:
+  title: DynamicEndpointAPI
+  description: API Definition of DynamicEndpointAPI
+  version: 1.0.0
+servers:
+- url: http://localhost:8290/dynamicEndpoint1
+paths:
+  /route:
+    get:
+      responses:
+        default:
+          description: Default response

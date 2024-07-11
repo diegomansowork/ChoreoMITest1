@@ -1,0 +1,11 @@
+---
+key: "DynamicEndpointAPI-1.0.0"
+name : "DynamicEndpointAPI"
+displayName : "DynamicEndpointAPI"
+description: "Sample API"
+version: "1.0.0"
+serviceUrl: "https://{MI_HOST}:{MI_PORT}/dynamicEndpoint"
+definitionType: "OAS3"
+securityType: "BASIC"
+mutualSSLEnabled: false
+apiId : "null"
