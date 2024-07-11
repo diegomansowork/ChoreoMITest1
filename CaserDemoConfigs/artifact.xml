@@ -11,9 +11,6 @@
     <artifact name="RequestLogger" groupId="com.example.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/sequences/RequestLogger.xml</file>
     </artifact>
-    <artifact name="Sequence" groupId="com.example.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
-        <file>src/main/synapse-config/sequences/Sequence.xml</file>
-    </artifact>
     <artifact name="Endpoint1" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/endpoints/Endpoint1.xml</file>
     </artifact>

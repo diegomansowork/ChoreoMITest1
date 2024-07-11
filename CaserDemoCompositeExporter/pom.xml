@@ -18,17 +18,16 @@
     <com.example.metadata_._DynamicEndpointAPI_swagger>capp/EnterpriseServiceBus</com.example.metadata_._DynamicEndpointAPI_swagger>
     <com.example.sequence_._RequestLogger>capp/EnterpriseServiceBus</com.example.sequence_._RequestLogger>
     <artifact.types>jaggery/app=zip,synapse/priority-executor=xml,synapse/inbound-endpoint=xml,service/rule=aar,synapse/message-store=xml,event/stream=json,service/meta=xml,datasource/datasource=xml,synapse/proxy-service=xml,bpel/workflow=zip,synapse/sequence=xml,synapse/endpointTemplate=xml,carbon/application=car,wso2/gadget=dar,synapse/api=xml,synapse/event-source=xml,synapse/message-processors=xml,event/receiver=xml,lib/dataservice/validator=jar,synapse/template=xml,synapse/endpoint=xml,lib/carbon/ui=jar,lib/synapse/mediator=jar,synapse/metadata=yaml,event/publisher=xml,synapse/local-entry=xml,synapse/task=xml,webapp/jaxws=war,registry/resource=zip,synapse/configuration=xml,service/axis2=aar,synapse/lib=zip,synapse/sequenceTemplate=xml,event/execution-plan=siddhiql,service/dataservice=dbs,web/application=war,lib/library/bundle=jar</artifact.types>
-    <com.example.sequence_._Sequence>capp/EnterpriseServiceBus</com.example.sequence_._Sequence>
     <com.example.metadata_._DynamicEndpointAPI_metadata>capp/EnterpriseServiceBus</com.example.metadata_._DynamicEndpointAPI_metadata>
     <com.example.endpoint_._Endpoint2>capp/EnterpriseServiceBus</com.example.endpoint_._Endpoint2>
     <com.example.endpoint_._Endpoint1>capp/EnterpriseServiceBus</com.example.endpoint_._Endpoint1>
   </properties>
   <dependencies>
     <dependency>
-      <groupId>com.example.api</groupId>
-      <artifactId>DynamicEndpointAPI</artifactId>
+      <groupId>com.example.metadata</groupId>
+      <artifactId>DynamicEndpointAPI_metadata</artifactId>
       <version>1.0.0</version>
-      <type>xml</type>
+      <type>yaml</type>
     </dependency>
     <dependency>
       <groupId>com.example.metadata</groupId>
@@ -37,22 +36,16 @@
       <type>yaml</type>
     </dependency>
     <dependency>
-      <groupId>com.example.sequence</groupId>
-      <artifactId>RequestLogger</artifactId>
+      <groupId>com.example.api</groupId>
+      <artifactId>DynamicEndpointAPI</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
     <dependency>
-      <groupId>com.example.sequence</groupId>
-      <artifactId>Sequence</artifactId>
+      <groupId>com.example.endpoint</groupId>
+      <artifactId>Endpoint1</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
-    </dependency>
-    <dependency>
-      <groupId>com.example.metadata</groupId>
-      <artifactId>DynamicEndpointAPI_metadata</artifactId>
-      <version>1.0.0</version>
-      <type>yaml</type>
     </dependency>
     <dependency>
       <groupId>com.example.endpoint</groupId>
@@ -61,8 +54,8 @@
       <type>xml</type>
     </dependency>
     <dependency>
-      <groupId>com.example.endpoint</groupId>
-      <artifactId>Endpoint1</artifactId>
+      <groupId>com.example.sequence</groupId>
+      <artifactId>RequestLogger</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
